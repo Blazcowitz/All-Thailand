@@ -1,0 +1,66 @@
+<!-- recommendations.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thailand Travel Guide – Discover tourism, gastronomy, festivals, sports and culture.">
+  <title>Recommendations</title>
+
+  <!-- Fuente y estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+<header>
+    <h1>About Thailand</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="tourism.html">Tourism</a>
+    <a href="gastronomy.html">Gastronomy</a>
+    <a href="festivals.html">Festivals</a>
+    <a href="sports.html">Sporting Events</a>
+    <a href="recommendations.html" class="active">Recommendations</a>
+</nav>
+
+<main>
+    <section>
+        <h2 class="section-title">About Thailand</h2>
+        <img src="images/flag.jpg" alt="Thailand flag">
+        <p>Thailand is a country known for its hospitality, culture, and cuisine. It offers unforgettable experiences for travelers.</p>
+    </section>
+
+    <section>
+        <h2 class="section-title">Travel Tips</h2>
+        <ul>
+            <li>Respect local customs</li>
+            <li>Try street food</li>
+            <li>Visit temples with proper attire</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Thailand Travel Guide</p>
+</footer>
+
+<!-- Botón Ir Arriba -->
+<button id="toTop" aria-label="Go to top">↑</button>
+
+<!-- Script de desplazamiento -->
+<script>
+window.addEventListener("scroll", () => {
+  document.getElementById("toTop").style.display =
+    window.scrollY > 200 ? "block" : "none";
+});
+document.getElementById("toTop").addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+</body>
+</html>

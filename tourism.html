@@ -1,0 +1,63 @@
+<!-- tourism.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thailand Travel Guide – Discover tourism, gastronomy, festivals, sports and culture.">
+  <title>Tourism</title>
+
+  <!-- Fuente y estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+<header>
+    <h1>Places you need to know</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="tourism.html" class="active">Tourism</a>
+    <a href="gastronomy.html">Gastronomy</a>
+    <a href="festivals.html">Festivals</a>
+    <a href="sports.html">Sporting Events</a>
+    <a href="recommendations.html">Recommendations</a>
+</nav>
+
+<main>
+    <section>
+        <h2 class="section-title">The Grand Palace</h2>
+        <img src="images/temple.jpg" alt="The Grand Palace">
+        <p>Historic and stunning palace in Bangkok.</p>
+    </section>
+
+    <section>
+        <h2 class="section-title">Other Places</h2>
+        <img src="images/place1.jpg" alt="Beach in Thailand">
+        <img src="images/place2.jpg" alt="Temple in Chiang Mai">
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Thailand Travel Guide</p>
+</footer>
+
+<!-- Botón Ir Arriba -->
+<button id="toTop" aria-label="Go to top">↑</button>
+
+<!-- Script de desplazamiento -->
+<script>
+window.addEventListener("scroll", () => {
+  document.getElementById("toTop").style.display =
+    window.scrollY > 200 ? "block" : "none";
+});
+document.getElementById("toTop").addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+</body>
+</html>

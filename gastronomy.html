@@ -1,0 +1,63 @@
+<!-- gastronomy.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thailand Travel Guide – Discover tourism, gastronomy, festivals, sports and culture.">
+  <title>Gastronomy</title>
+
+  <!-- Fuente y estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+<header>
+    <h1>Gastronomy</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="tourism.html">Tourism</a>
+    <a href="gastronomy.html" class="active">Gastronomy</a>
+    <a href="festivals.html">Festivals</a>
+    <a href="sports.html">Sporting Events</a>
+    <a href="recommendations.html">Recommendations</a>
+</nav>
+
+<main>
+    <section>
+        <h2 class="section-title">Thai Cuisine</h2>
+        <img src="images/food1.jpg" alt="Traditional Thai food">
+        <p>Thai food is known for its balance of flavors and use of fresh herbs.</p>
+    </section>
+
+    <section>
+        <h2 class="section-title">Recommendations</h2>
+        <img src="images/food2.jpg" alt="Pad Thai">
+        <img src="images/food3.jpg" alt="Tom Yum Soup">
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Thailand Travel Guide</p>
+</footer>
+
+<!-- Botón Ir Arriba -->
+<button id="toTop" aria-label="Go to top">↑</button>
+
+<!-- Script de desplazamiento -->
+<script>
+window.addEventListener("scroll", () => {
+  document.getElementById("toTop").style.display =
+    window.scrollY > 200 ? "block" : "none";
+});
+document.getElementById("toTop").addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+</body>
+</html>
